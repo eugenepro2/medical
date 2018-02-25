@@ -1,6 +1,5 @@
 .container
-  max-width: 1200px
-  width: 100%
+  width: 1200px !important
   padding: 0 15px
   height: 100%
 .row
@@ -24,3 +23,62 @@ h2
     text-align: left
     color: #ffffff
     text-align: center
+
+
+.content
+  padding: 50px 0
+  h2
+    color: #000000
+    font-size: 36px
+    margin-bottom: 20px
+  h3
+    margin-bottom: 10px
+  p
+    font-size: 16px
+    margin-bottom: 10px
+
+
+.pop-up
+  position: fixed
+  overflow: hidden
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5)
+  display: none
+  z-index: 100
+  &__block
+    position: absolute
+    overflow: visible !important
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &-login
+    .pop-up__block
+      width: 500px
+    h2
+      font-size: 30px
+.pop-up
+  &-close
+    position: absolute
+    top: -30px
+    right: -45px
+    cursor: pointer
+    width: 40px
+    height: 40px
+    &:before, &:after
+      content: ''
+      width: 40px
+      height: 2px
+      background: #ffffff
+      display: block
+    &:before
+      transform: rotate(45deg) translate(2px, 2px) 
+    &:after
+      transform: rotate(-45deg)
+      
+
+

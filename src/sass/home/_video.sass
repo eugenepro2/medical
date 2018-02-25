@@ -1,9 +1,18 @@
 .video
-	background-image: url('../img/video/bg.png')
+	background-image: url('../img/video/bg.gif')
 	background-size: cover
 	height: 900px
 	padding-top: 200px
 	position: relative
+	&__black
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.5)
+	h2, p, a
+		position: relative
+		z-index: 10
 	p
 		font-family: Circe
 		font-size: 18px
